@@ -1,1 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+header{
+    border: 1px solid black;
+    display: grid;
+    /* fr é a quantidade q falta por exemplo 5 fr 5/7 da parte de baixo */
+    grid-template-columns: 1fr 5fr 1fr;
+    /* Altura maxima */
+    height: 50px;
+    /* Alinhando os itens no centro da horizontal */
+    align-items: center;
+    /* Alinhando os itens no centro da vertical */
+    justify-items: center;
+}
+/* Pegar a ultima "secao" */
+section:last-child{
+    /* Deixar em 3 colunas de separacao */
+    grid-column: 3;
+}
+
+footer{
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    /* grid-row é para alterar a ordem das linhas se precisar o column das colunas*/
+}
+div{
+    display: grid;
+    grid-template-rows: 10vw 1fr 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+}
+
+/* article{
+    display: grid;
+    grid-template-rows: 3fr 5fr 1fr;
+    grid-template-columns: 2fr 500px 4fr;
+} */
+
+section{
+    border-top: 1px solid black;
+    /* display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 3fr 4fr; */
+}
+
+aside{
+    border: 1px solid black;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 8px;
+}

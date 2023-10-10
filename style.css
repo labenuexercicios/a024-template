@@ -1,1 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header{
+    border: 3px dashed rgb(157, 123, 123);
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+    padding: 0 16px;
+    height: 10vh;
+    background-color: antiquewhite;
+}
+
+#botao-header{
+    grid-column: 3;
+    justify-self: end;
+}
+
+#pagina-toda{
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+   
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 80vh;
+    
+}
+
+aside{
+    background-color: bisque;
+}
+
+.content-container{
+  grid-column: 2/5;
+  background-color: antiquewhite;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+footer{
+    height: 10vh;
+    text-align: center;
+    background-color: bisque;
+    border-style: dashed;
+    border-color: rgb(157, 123, 123);
+}
